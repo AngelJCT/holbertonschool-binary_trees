@@ -14,7 +14,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	height = binary_tree_height(tree);
 	num_nodes = binary_tree_size(tree);
 
-	return (num_nodes == (1 << height) - 1);
+	//this expression returns 1 if the number of nodes in the tree
+	//num_nodes is equal to 2^height - 1, return 1 if they are equal and 0 otherwise.
+	return (num_nodes == (1 << height) - 1); //^ means exponentiation
 }
 /**
  *binary_tree_height-measure the height of a tree
