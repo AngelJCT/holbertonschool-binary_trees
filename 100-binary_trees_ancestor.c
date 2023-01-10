@@ -1,11 +1,11 @@
 #include "binary_trees.h"
 /**
- *binary_t_lca-find the lowest common ancestor of two nodes
+ *binary_trees_ancestor-find the lowest common ancestor of two nodes
  *@t1: pointer to first node
  *@t2: pointer to second node
  *Return: pointer to lowest common ancestor node of two given nodes
  */
-binary_tree_t *binary_t_lca(const binary_tree_t *t1, const binary_tree_t *t2)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *t1, const binary_tree_t *t2)
 {
 	int first_depth, second_depth, i;
 
