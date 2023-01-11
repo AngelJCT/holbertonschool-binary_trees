@@ -48,6 +48,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
  */
 void print_level(const binary_tree_t *tree, int level, void (*func)(int))
 {
+	//This function recursively traverse the tree in a level by level fashion and call the callback function when the current level matches the level passed as parameter.
 	if (tree == NULL)
 		return;
 	if (level == 1)
