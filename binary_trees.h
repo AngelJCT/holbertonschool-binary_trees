@@ -21,6 +21,7 @@ struct binary_tree_s *right;
 };
 typedef struct binary_tree_s binary_tree_t;
 
+int countNodes(const binary_tree_t *tree);
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
@@ -51,5 +52,6 @@ binary_tree_t *deQueue(binary_tree_t **queue, int *front);
 void enQueue(binary_tree_t **queue, int *rear, binary_tree_t *newNode);
 binary_tree_t **createQueue(int *front, int *rear);
 void print_level(const binary_tree_t *tree, int level, void (*func)(int));
+int binary_tree_is_complete(const binary_tree_t *tree);
 #endif
 
